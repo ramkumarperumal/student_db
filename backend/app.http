@@ -1,0 +1,21 @@
+#####
+GET http://localhost:5000/students
+
+####
+POST http://localhost:5000/students 
+Content-Type: application/json
+
+{
+    "name": "bharath", "studentClass":"VII A", "marks":"90"
+}
+
+###
+PUT http://localhost:5000/students/2
+Content-Type: application/json
+
+{
+    "name": "bharath kumar", "studentClass":"VII A", "marks":"90"
+}
+
+####
+DELETE http://localhost:5000/students/2
